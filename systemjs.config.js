@@ -6,11 +6,13 @@
   System.config({
     paths: {
       // paths serve as alias
-      'npm:': 'node_modules/'
+      'npm:': 'node_modules/',
+      "ng2-bootstrap":   "node_modules/ng2-bootstrap"
     },
     // map tells the System loader where to look for things
     map: {
       // our app is within the app folder
+      moment: 'node_modules/moment/moment.js',
       app: 'app',
 
       // angular bundles
@@ -39,6 +41,9 @@
       'angular2-in-memory-web-api': {
         main: './index.js',
         defaultExtension: 'js'
+      },
+      "node_modules/ng2-bootstrap": {
+        "defaultExtension": "js"
       }
     }
   });
