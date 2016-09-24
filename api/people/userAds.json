@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Szymon",
+        "level": "B2",
+        "native": "Polish",
+        "flag": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png",
+        "textChat": true,
+        "voiceChat": false
+    },
+    {
+        "id": 2,
+        "name": "Karolina",
+        "level": "B2",
+        "native": "Polish",
+        "flag": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png",
+        "textChat": true,
+        "voiceChat": true
+    },
+    {
+        "id": 3,
+        "name": "George",
+        "level": "B1",
+        "native": "English",
+        "flag": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png",
+        "textChat": false,
+        "voiceChat": true
+    },
+    {
+        "id": 4,
+        "name": "Jacek",
+        "level": "C2",
+        "native": "Russian",
+        "flag": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png",
+        "textChat": true,
+        "voiceChat": true
+    }
+]
