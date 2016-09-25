@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 
 import { IAd } from './ad';
 import { AdService } from "./ad.service";
+import {Observable} from "rxjs";
 
 @Component({
     templateUrl: 'app/userAds/ad-list.component.html',
@@ -9,7 +10,8 @@ import { AdService } from "./ad.service";
 export class AdListComponent implements OnInit {
     pageTitle: string = 'Product List';
     errorMessage: string;
-    ads: IAd[];
+    ads: Observable<IAd[]>;
+    // ads: IAd[];
     model = 1;
 
 
@@ -18,12 +20,15 @@ export class AdListComponent implements OnInit {
     }
 
     ngOnInit(): void {
-      this._adService.getAds()
-                     .subscribe(
-                       ads => this.ads = ads,
-                       error =>  this.errorMessage = <any>error);
+      // console.log("oninit");
+      this.getAds();
+      // this._adService.getAds()
+      //   .subscribe(
+      //     ads => this.ads = ads,
+      //     error =>  this.errorMessage = <any>error);
     }
-    // onRatingClicked(message: string): void {
-    //     this.pageTitle = 'Current Ads: ' + message;
-    // }
+
+    getAds() {
+      this.ads = this._adService.getAds();
+    }
 }
