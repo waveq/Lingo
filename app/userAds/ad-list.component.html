@@ -1,6 +1,8 @@
 
-<div class="panel panel-default"  *ngFor='let ad of ads | async'>
-<div class="panel-heading" >{{ ad.name }} chce pogadać</div>
+<div class="panel panel-default" *ngFor='let ad of ads | async'>
+<div class="panel-heading" >
+  <h3 class="panel-title">{{ ad.name }} chce pogadać</h3>
+</div>
     <div class="panel-body" >
 
         <div class="firstRowContainer" >

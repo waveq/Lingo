@@ -4,5 +4,6 @@ import { Component } from '@angular/core';
     templateUrl: 'app/home/welcome.component.html'
 })
 export class WelcomeComponent {
-    public pageTitle: string = 'Not Welcome';
+    buttonTitle: string = 'Dead Link';
+    linkUrl: string = 'pam-param-pam-pam';
 }

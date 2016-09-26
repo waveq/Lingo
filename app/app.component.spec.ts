@@ -1,5 +1,5 @@
 /* tslint:disable:no-unused-variable */
-import { AppComponent } from './app.component';
+import { AppComponent } from './appComponent/app.component';
 
 import { TestBed } from '@angular/core/testing';
 
